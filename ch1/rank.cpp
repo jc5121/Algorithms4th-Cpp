@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// 二分法 
+// 浜屽垎鏌ユ壘 
 int rank(int *a, int size, int key) 
 {
 	int low = 0;
@@ -20,7 +20,7 @@ int rank(int *a, int size, int key)
 
 int main(int argc, char ** argv)
 {
-	// 数组必须有序 
+	// array must be sorted
 	int a[10] = {0,1,2,3,4,8,81,250,452,1234};
 	int index = -1;
 	for(int i = 1; i<10; i++)
