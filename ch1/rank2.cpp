@@ -13,7 +13,6 @@ int rank(int* a, int key, int low, int high)
 
 int main(int argc, char** argv)
 {
-	// 数组必须有序 
 	int a[10] = {0,1,2,3,4,8,81,250,452,1234};
 	int index = -1;
 	for(int i = 0; i<10; i++)
