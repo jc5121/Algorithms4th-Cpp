@@ -1,0 +1,15 @@
+安装node.js时一定要按照文档中的来，替换版本为8.11.1，完成后使用node -v命令来测试（而不是nodejs -v）
+
+使用shell中默认apt-get install node-  会使得版本过低 4.2.3？？？
+
+npm i reverse-tunnel-ssh  来安装reverse-tunnel-ssh第三方模块，否则运行tunning.js会找不到模块
+
+需要在阿里运控制台更改安全组规则，来开启入端口的访问权限
+https://help.aliyun.com/document_detail/25471.html?spm=a2c4e.11155515.0.0.7qoYVu
+
+浏览器中输入http://47.92.5.66:8282/simple_gui.html
+(此处使用的是阿里云服务器的弹性IP，不会变化)
+
+使用rbx2中的代码来运行rosbridge
+
+如果出现报错“sh: 1: v4l2-ctl: not found”则需要安装v4l2：sudo apt-get install v4l-utils
