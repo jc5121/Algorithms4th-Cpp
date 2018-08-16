@@ -1,0 +1,18 @@
+对视频流的预处理，opencv3.3(cv_bridge 转化图像格式) + imutils
+
+行人检测算法，DNN
+
+音频的播放处理 pygame  （Python）
+
+时间的控制，从而解决cpu占用率的问题，每0.2s检测一次。
+
+整个流程就是起了一个名为detection_listener的ros节点，这个节点：
+
+1.订阅了zed的/zed/left/image_raw_color主题来得到视频流，每0.2s选取一帧(frame)进行处理，同时检测是否有行人。
+
+2.订阅了zed的/zed/depth/depth_registered主题，得到带深度信息的视频流，在检测到有行人之后，通过读取图像正中间那一点的深度判断行人与摄像头之间距离。如果小于1.5m（可以更改），就调用pygame模块发出声音，否则打印too far.
+
+
+
+
+

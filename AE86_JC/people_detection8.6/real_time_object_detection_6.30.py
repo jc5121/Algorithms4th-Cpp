@@ -21,6 +21,7 @@ def play_sounds():
         pygame.mixer.music.play()
 
 def depth_image_callback(ros_depth_image):
+	# 全局变量用法
 	global distant_flag
 
 	bridge = CvBridge()
